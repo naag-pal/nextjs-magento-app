@@ -1,10 +1,14 @@
 {
   "compilerOptions": {
     "target": "es5",
-    "lib": ["dom", "dom.iterable", "esnext"],
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
     "allowJs": true,
     "skipLibCheck": true,
-    "strict": true,
+    "strict": false,
     "forceConsistentCasingInFileNames": true,
     "noEmit": true,
     "esModuleInterop": true,
@@ -13,8 +17,21 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "preserve",
+    "baseUrl": ".",
+    "paths": {
+      "@magentopwa/*": [
+        "src/*"
+      ],
+      "@styles/*": ["styles/*"]
+    },
     "incremental": true
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
-  "exclude": ["node_modules"]
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx"
+, "src/components/PageBuilder/lib/parseStorageHtml-backup.js", "src/components/PageBuilder/lib/parseStorageHtml.js", "src/components/PageBuilder/lib/handleHtmlContentClick.js", "src/components/PageBuilder/lib/parseStorageHtml.js", "src/components/PageBuilder/lib/detectPageBuilder.js", "src/components/PageBuilder/lib/config.js", "src/components/PageBuilder/lib/parseStorageHtml.js", "pages/api/notifications.js"  ],
+  "exclude": [
+    "node_modules"
+  ]
 }
